@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script defer src="../render.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/signup_respol.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="main">
+        <header>Researcher Signup</header>
+        <div class = "container">
+            <form>
+                <input type="text" class="signup-box" placeholder="First Name" id="signup-res-fname">
+                <input type="text" class="signup-box" placeholder="Last Name" id="signup-res-lname">
+                <input type="text" class="signup-box" placeholder="ID" id="signup-res-id">
+                <input type="Password" class="signup-box" placeholder="Password" id="signup-res-pass"><br>
+                <button type="button" class="signup-button" onclick="signup(this)" id="signup-res-done">SIGN UP</button><br>
+                <label>Already have an account? <a href="../html/login.html">Login</a></label><br>
+                <label id = "error"></label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

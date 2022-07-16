@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/crud.css">
+    <script defer src="../render.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>police form</title>
+</head>
+<body>
+    <div class="main">
+        <header>UPDATE</header>
+        <div class = "container">
+            <form id ="update-form">
+                <input type="text" class="crud-box" placeholder="Person ID">
+                <input type="text" class="crud-box" placeholder="First Name">
+                <input type="text" class="crud-box" placeholder="Last Name">
+                <input type="text" class="crud-box" placeholder="Gender">
+                <input type="text" class="crud-box" placeholder="Date of Birth">
+                <input type="text" class="crud-box" placeholder="Contact Number">
+                <button type="button" class="submit-button" onclick="onClickAddRecord()" id="person-submit-add" >INSERT</button>
+                <button type="button" class="submit-button" onclick="onClickUpdateRecord()" id="person-submit-update" >UDPATE</button>
+                <button type="button" class="submit-button" onclick="onDeleteRecord()" id="person-submit-delete" >DELETE</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,252 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.main-column
+{
+    background:rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    height: 80%;
+    width: 80%;
+}
+
+input
+{
+    width: 50%;
+    height: 10%;
+    padding: 5px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+}
+
+input[type=submit]
+{
+    width: 35px;
+    height: 33px;
+    margin-left: -40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input::-ms-clear 
+{
+    display: none;
+}
+
+input[type=radio]
+{
+    display: none;
+    width: auto;
+}
+
+input[type=search]::-ms-clear 
+{  
+    display: none; 
+    width : 0; 
+    height: 0; 
+}
+
+input[type=search]::-ms-reveal 
+{  
+    display: none; 
+    width : 0; 
+    height: 0; 
+}
+
+input[type="radio"]:checked + label {
+    background:#00b894;
+    transition: all .3s ease;
+    border-radius: 14px;
+}
+
+.radio-container
+{
+    padding: 20px;
+}
+
+.radio-container label
+{
+    padding: 15px;
+}
+
+html
+{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    background-image: url('../res/home_bg2.jpg');
+    background-position: center;
+    object-fit: cover;
+}
+nav
+{
+    width: 100%;
+    height: 15vh;
+    background:rgba(0,0,0,0.2);
+    color: #00b894;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav ul li 
+{
+    list-style: none;
+    display: inline-block;
+    margin: 25px;
+    position: relative;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+nav ul li:hover
+{
+  background: #00b894;
+  padding: 15px;
+}
+
+nav ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+
+nav .logo
+{
+    padding: 25px;
+    text-align: center;
+}
+nav .menu
+{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+nav .menu a
+{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main
+{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+/* TABLE THINGY */ 
+
+.table-div
+{
+    overflow: auto;
+    height: 65%;
+}
+
+.btn-container button
+{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: #00b894;
+    margin: 5px;
+    border-radius: 12px;
+    color: white;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead th
+{
+    top: 0; z-index: 1;
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    position: sticky;
+    inset-inline-start: 0;
+}
+
+.styled-header
+{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    position: sticky;
+    inset-inline-start: 0;
+}
+
+table thead,
+table tfoot {
+  position: sticky;
+}
+table thead {
+  inset-block-start: 0; /* "top" */
+}
+table tfoot {
+  inset-block-end: 0; /* "bottom" */
+}
+
+.styled-table th,
+.styled-table td {
+    text-align: center;
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/josefin-sans-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/josefin-sans-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }

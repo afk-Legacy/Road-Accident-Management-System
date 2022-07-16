@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/signup_respol.css">
+    <script defer src="../render.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>police form</title>
+</head>
+<body>
+    <div class="main">
+        <header>Signup</header>
+        <div class = "container">
+            <form>
+                <input type="text" class="signup-box" placeholder="First Name" id="signup-police-fname">
+                <input type="text" class="signup-box" placeholder="Last Name" id="signup-police-lname">
+                <input type="text" class="signup-box" placeholder="Badge Number" id="signup-police-badge">
+                <input type="Password" class="signup-box" placeholder="Password" id="signup-police-pass"><br>
+                <button type="button" class="signup-button" onclick="signup(this)" id="signup-police-done">SIGN UP</button><br>
+                <label>Already have an account? <a href="../html/login.html">Login</a></label><br>
+                <label id = "error"></label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

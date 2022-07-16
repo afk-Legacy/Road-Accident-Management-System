@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Accident Management System</title>
+    <script defer src="../render.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="stylesheet" href="../css/animate.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../res/logo.png" class = "animated infinite pulse"></div>
+           
+            <nav role="navigation" class = 'menu'>
+                <ul>
+                  <li><a href="../html/home.html">Home</a></li>
+                  <li><a href="../html/home.html#">Logout</a></li>
+                  <li><a id="about" onclick="openModal(this)">About</a></li>
+                </ul>
+              </nav>
+        </nav>
+            <main>
+                <div class="main-column">
+                    <input type="search" id="search-query" placeholder="Search for records..">
+                    <input type="submit" id="search-query-btn" value="🔎" onclick="search()"></br>
+                    <div class="radio-container">
+                        <input type="radio" id="accident-table" name="tableType">
+                        <label for="accident-table" class="radio-label" onclick="onChooseTable(this)">Accident</label>
+                        <input type="radio" id="person-table" name="tableType">
+                        <label for="person-table" class="radio-label" onclick="onChooseTable(this)">Person</label>
+                        <input type="radio" id="passenger-table" name="tableType">
+                        <label for="passenger-table" class="radio-label" onclick="onChooseTable(this)">Passenger</label>
+                        <input type="radio" id="vehicle-table" name="tableType">
+                        <label for="vehicle-table" class="radio-label" onclick="onChooseTable(this)">Vehicle</label>
+                        <input type="radio" id="accidentvehicle-table" name="tableType" >
+                        <label for="accidentvehicle-table" class="radio-label" onclick="onChooseTable(this)">AccidentVehicle</label>
+                    </div>
+
+                    <div class="table-div">
+                        <table class="styled-table" id="result-table">
+                            <thead></thead>
+                        </table>                        
+                    </div>
+
+                    <div class="btn-container">
+                        <button type="button" id="crud-query-init" onclick="openModal(this)">MODIFY TABLE</button>
+                    </div>
+                </div>
+            </main>
+        
+    </header>
+   
+
+</body></html>
